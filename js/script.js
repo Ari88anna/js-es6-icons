@@ -103,9 +103,38 @@ const colors = [
     'purple'
 ];
 
+{/* <div class="each-icon">
+
+<i class="fas fa-cat"></i>
+<div>
+    Nome icona
+</div>
+</div> */}
+
 // Milestone 1
 // Partendo dalla seguente struttura dati , 
 // mostriamo in pagina tutte le icone disponibili come da layout.
+
+// per farlo servirà un ciclo FOR EACH
+icons.forEach((element) => {
+
+    const iconContainer = $('.icons-container');    
+
+    const{name, family, prefix} = icons;
+    console.log(element.name)
+
+    const iconToPrint = `
+    <div class="each-icon">
+
+        <i class="${element.family} ${element.prefix}${element.name}"></i>
+        <div>
+            ${element.name}
+        </div>
+    </div>
+    `;
+
+    iconContainer.append(iconToPrint);
+})
 
 // Milestone 2
 // Coloriamo le icone per tipo
