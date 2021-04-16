@@ -1,0 +1,55 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+.container {
+    width: 80%;
+    max-width: 1024px;    
+    margin:auto;
+}
+
+.logo-container {
+    width: 20%;    
+}
+
+main {
+    background-color: cadetblue;
+}
+
+/* MAIN */
+
+/* filter section */
+
+.filter-container {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+/* icons section */
+
+.icons-section {
+    background-color: lightblue;    
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.each-icon {
+    background-color: lightcyan;
+}
+
